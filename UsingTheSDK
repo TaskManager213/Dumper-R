@@ -6,9 +6,9 @@
 3. Set `Configuration Type` from `Application (.exe)` to `Dynamic Library (.dll)`
 4. In the same settings set the `C++ Language Standard` from `Default (ISO C++14 Standard)` to `Preview - Latest...`
 5. Hit Apply and close the settings \
-  ![image](https://github.com/Encryqed/Dumper-7/assets/64608145/e0170247-631d-466d-91c7-94a1c55b34a1)
+
 7. Switch your build configuration from `x86` to `x64` \
-   ![image](https://github.com/Encryqed/Dumper-7/assets/64608145/5f8963c1-4e55-4f3a-b080-26445d585c86)
+
 8. Add a file `Main.cpp` to your project
 9. Add a `DllMain` function and a `MainThread` function (See code [here](#code))
 
@@ -24,7 +24,7 @@
 7. If you call a function from the SDK you need to add the .cpp file, that contains the function-body, to your project. \
    Example: \
    Calling `GetViewportSize()` from `APlayerController` requires you to add `Engine_functions.cpp` to your project. \
-   ![image](https://github.com/Encryqed/Dumper-7/assets/64608145/c9ecf0c7-ec73-4e6a-8c6d-d7c86c26b5c8)
+
 
 9. If there are any static_asserts failing, or other errors occuring, during building, read the [Issue](README.md#issues) part of the [ReadMe](README.md)
 
@@ -109,7 +109,7 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD reason, LPVOID lpReserved)
         return TRUE;
 }
 ```
-### Example program that enables the UnrealEngine console
+### Example program that enables the Roblox console
 ```c++
 #include <Windows.h>
 #include <iostream>
