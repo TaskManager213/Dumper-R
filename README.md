@@ -1,5 +1,5 @@
 # Dumper-R
-SDK Generator for Roblox. Supported versions are x64 & x86.
+SDK Generator for Roblox. Supported versions are x64 & x86. (Byfron)
 
 How to use
 Compile the dll in x64-Release
